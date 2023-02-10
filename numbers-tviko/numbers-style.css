@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.nums-info {
+  margin-bottom: 50px;
+  background-color: #d9a575;
+  padding: 50px 10px;
+}
+
+.num-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.num-wrapper {
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  width: 33%;
+}
+
+.num {
+  font-size: 85px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.num-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.last-num {
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .num-wrap {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .num-wrapper {
+    width: 33%;
+  }
+
+  .num {
+    font-size: 55px;
+  }
+
+  .num-text {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .num-wrap {
+    flex-wrap: wrap;
+  }
+
+  .num-wrapper {
+    width: 100%;
+    border: none;
+  }
+}

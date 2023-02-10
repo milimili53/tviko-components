@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+.action-btn {
+  width: 400px;
+  max-height: 50px;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9a575;
+  border: none;
+  font-family: "Playfair Display", serif;
+  transition: 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-size: 14px;
+}
+
+.action-btn:hover {
+  width: 480px;
+  background-color: #cd8b53;
+}
+
+@media only screen and (max-width: 600px) {
+  .action-btn {
+    width: 80%;
+  }
+
+  .action-btn:hover {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .action-btn {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .action-btn:hover {
+    width: 90%;
+  }
+}

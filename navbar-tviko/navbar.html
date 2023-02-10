@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tviko</title>
+
+    <link rel="stylesheet" href="nav-style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-wrapper">
+        <div class="nav-logo">
+          <a href="#" style="text-decoration: none">
+            <img src="nav-assets/TVIKO – kopija (1) 2.png" alt="navLogo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">POČETNA</a>
+          <a href="#" class="nav-link">O NAMA</a>
+          <a href="#" class="nav-link">KONTAKT</a>
+          <a href="#" class="nav-link last-link">NEKRETNINE</a>
+        </div>
+        <div class="nav-socials">
+          <img
+            src="nav-assets/facebook.png"
+            class="fb-space"
+            alt="facebook nav"
+          />
+          <img src="nav-assets/instagram (1).png" alt="instagram nav" />
+        </div>
+        <div class="burger">
+          <img src="nav-assets/burger.png" alt="burger" />
+        </div>
+      </div>
+      <div class="responsive-menu none">
+        <a href="#" class="res-link close">X</a>
+        <a href="#" class="res-link">POČETNA</a>
+        <a href="#" class="res-link">O NAMA</a>
+        <a href="#" class="res-link">KONTAKT</a>
+        <a href="#" class="res-link last-link">NEKRETNINE</a>
+      </div>
+      <div class="overlay none"></div>
+    </nav>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const resMenu = document.querySelector(".responsive-menu");
+      const resOverlay = document.querySelector(".overlay");
+      const closeMenu = document.querySelector(".close");
+
+      burger.addEventListener("click", function () {
+        resMenu.classList.remove("none");
+        resOverlay.classList.remove("none");
+      });
+
+      closeMenu.addEventListener("click", function () {
+        resMenu.classList.add("none");
+        resOverlay.classList.add("none");
+      });
+
+      resOverlay.addEventListener("click", function () {
+        resMenu.classList.add("none");
+        resOverlay.classList.add("none");
+      });
+    </script>
+  </body>
+</html>
