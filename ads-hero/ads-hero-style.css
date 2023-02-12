@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ///////////////////////////// */
+
+.res-back {
+  background-image: url(ads-hero-assets/nekretnine-back.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.res-heading {
+  font-weight: 900;
+  font-size: 75px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 530px) {
+  .res-heading {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .res-heading {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .res-heading {
+    font-size: 20px;
+  }
+}
