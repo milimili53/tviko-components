@@ -176,7 +176,8 @@ table {
   margin: 10px;
 }
 
-.co-h {
+.co-h,
+.title-ad {
   margin-top: 100px;
   font-size: 45px;
   text-align: center;
@@ -330,7 +331,8 @@ table {
 }
 
 @media only screen and (max-width: 670px) {
-  .co-h {
+  .co-h,
+  .title-ad {
     font-size: 35px;
   }
 }
@@ -362,7 +364,8 @@ table {
     font-size: 15px;
   }
 
-  .co-h {
+  .co-h,
+  .title-ad {
     font-size: 25px;
   }
 }
@@ -378,6 +381,10 @@ table {
 
   .look-all-heading {
     font-size: 25px;
+  }
+
+  .title-ad {
+    font-size: 20px;
   }
 }
 

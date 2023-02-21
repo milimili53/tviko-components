@@ -35,7 +35,8 @@
 .hero-heading {
   font-family: "Playfair Display", serif;
   font-size: 75px;
-  color: black;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   font-weight: 900;
   text-align: center;
 }
